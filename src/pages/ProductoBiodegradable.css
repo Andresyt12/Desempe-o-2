@@ -1,0 +1,149 @@
+/* Estilo general */
+.biodegradables-layout {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.biodegradables-header {
+  grid-area: header;
+  text-align: center;
+  background-color: #e0f7fa;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.biodegradables-header:hover {
+  background-color: #b2ebf2;
+}
+
+.biodegradables-aside {
+  grid-area: aside;
+  background-color: #ffffff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.biodegradables-main {
+  grid-area: main;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.biodegradables-footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #e0f7fa;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* Estilo para los enlaces */
+.biodegradables-link {
+  display: block;
+  color: #00796b;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.biodegradables-link:hover {
+  color: #004d40;
+}
+
+/* Estilo para la sección de información */
+.info-section h2 {
+  color: #00796b;
+  font-size: 1.8em;
+}
+
+.intro-text {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn-link {
+  display: inline-block;
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+/* Sección de beneficios */
+.benefits-section {
+  margin-top: 30px;
+}
+
+.benefits-section h2 {
+  color: #00796b;
+  font-size: 1.5em;
+}
+
+.benefits-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits-section li {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Galería de productos */
+.products-gallery {
+  margin-top: 30px;
+}
+
+.products-gallery h2 {
+  color: #00796b;
+  font-size: 1.5em;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.gallery-item {
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00796b;
+}
